@@ -1,0 +1,13 @@
+Regra de criação de coisas atravez de branchs: 
+
+* Branch principais que todo repositório local tera: 
+- Branch main (Que é basicamente a ultima versão que está no ar, versão publica que o usuario final esta usando)
+- Branch DEVELOP / DEV / DEVELOPMENT (Branch baseada na branch main, ou seja ela é inicialmente uma copia da branch main e é ela nossa referencia para trabalhar)
+- Novas Branchs para CADA FUNCIONABILIDADE do código( quando vamos criar uma nova funcionalidade, quebramos ela em uma branch diferente) normalmente nomeamos essa branch como: feature/nomeDaFuncionalidadeNova
+- Terminada a funcionalidade, damos um MERGE na branch DEVELOP e após isso apagamos a branch da funcionalidade em questão
+
+
+- Branch Release/0.1.0 Criamos uma branch de release para cada versão que vamos lançar, ela sera a unica branch que vera a luz do dia no ambiente remoto ( unica que faremos push para o github) enviaremos então ela para nosso remoto e apartir do remoto faremos um pull request para a branch main, para que ela seja atualizada com a nova versão
+
+
+- Branch Hotfix/0.1.1 Criamos uma branch de hotfix para cada correção de bug que precisamos fazer, ela sera a unica branch que não passa pela Branch Release mas sim vai diretamente para a main, pois é uma correção de bug que precisa ser feita o mais rapido possivel, e não pode esperar a proxima versão.
