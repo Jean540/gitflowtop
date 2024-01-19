@@ -11,3 +11,21 @@ Regra de criação de coisas atravez de branchs:
 
 
 - Branch Hotfix/0.1.1 Criamos uma branch de hotfix para cada correção de bug que precisamos fazer, ela sera a unica branch que não passa pela Branch Release mas sim vai diretamente para a main, pois é uma correção de bug que precisa ser feita o mais rapido possivel, e não pode esperar a proxima versão.
+
+
+Notas de versionamento :
+ 0.0.0 = A.B.C
+
+A= Versão TOTAL do sistema
+B= Quantidade de funcionalidades novas 
+C= Quantidade de BUGs corrigidos 
+
+1.0.0
+1.0.1
+1.1.0
+1.1.1
+1.1.2
+1.2.0
+1.3.0
+1.3.1
+2.0.0
